@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bataille navale en réseau</title>
+    <link type="text/css" rel="stylesheet" href="bataille.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./bataille.js"></script>
+</head>
+
+<main>
+    <section>
+        <p>Grille de l'adversaire</p>
+        <!--- insérez ici la grille générée pour l'adversaire -->
+        <aside></aside>
+    </section>
+    <section>
+        <p>Votre grille</p>
+        <!--- insérez ici la grille générée pour le joueur -->
+        <aside>
+            <label class="lancetorpilles"><input type="radio" name="radBateau" value="lancetorpilles" checked> Lance torpilles (2)</label>
+            <label class="contretorpilleur"><input type="radio" name="radBateau" value="contretorpilleur"> Contre torpilleur (3)</label>
+            <label class="sousmarin"><input type="radio" name="radBateau" value="sousmarin"> Sous marin (3)</label>
+            <label class="cuirasse"><input type="radio" name="radBateau" value="cuirasse"> Cuirassé (4)</label>
+            <label class="porteavions"><input type="radio" name="radBateau" value="porteavions"> Porte-avion (5)</label>
+            <button id="btnDemarrer">Lancer la partie !</button>
+            <footer>
+                Message pour votre adversaire :<br>
+                <input type="text" id="txtMsg" size=36> <button id="btnEnvoyer">&rarr;</button>
+            </footer>
+        </aside>
+    </section>
+    
+</main>
+<aside>
+    
+</aside>
+    
+</html>

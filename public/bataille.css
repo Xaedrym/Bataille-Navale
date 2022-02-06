@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*********************************
+ *  Début de la feuille de style
+ *********************************/
+
+body {
+    font-size: 15px;   
+}
+
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+
+/** Grilles **/
+table {
+    margin: 20px;
+}
+
+td, th {
+    box-sizing: border-box;
+    width: 30px;
+    height: 28px;
+    border: solid 1px #000;
+    margin: 1px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+tr:first-child > *, td:first-child {
+    border: none;
+    font-weight: bold;
+}
+ 
+
+/** Labels des boutons radio */
+label {
+    padding: 5px;   
+    display: block;
+    width: 200px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+
+/** 
+ *  Styles à appliquer sur les cases pour marquer les positions des bateaux. 
+ */
+.lancetorpilles {
+    background-color: lightblue;   
+}
+.contretorpilleur {
+    background-color: lightgreen;   
+}
+.sousmarin {
+    background-color: yellow;   
+}
+.cuirasse {
+    background-color: palevioletred;
+}
+.porteavions {
+    background-color: orange;   
+}
+.touche {
+    background-color: red;   
+}
+td.tir:before {
+    content: '\02717';
+}
+
+section {
+    padding: 20px;
+    width: 900px;
+    margin: 0 auto;
+}
+main section > *:not(:first-child) {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+section aside {
+    position:relative;
+    padding-top: 24px;
+    width: 400px;
+    height: 260px;
+    overflow: scroll;
+}
+
+section:nth-of-type(2) > aside > footer {
+    display: none;
+} 
+.partieEnCours section:nth-of-type(2) > aside > footer {
+    display: block;
+} 
+section:nth-of-type(1) > aside p {
+    margin: 6px 0;
+}
+
+.partieEnCours section:nth-of-type(2) aside > label, .partieEnCours section:nth-of-type(2) aside > button {
+    display: none;
+}
+
+.serveur {
+    color: darkblue;
+}
+.adversaire {
+    color: red;
+}
+.moi {
+    color: darkgreen;
+}
+
+/*
+section:nth-of-type(2) {
+    border: solid 3px #000;
+    perspective-origin: top center;
+    transform-style: preserve-3d;
+    transform:  perspective(900px) rotateX(30deg);
+}
+*/
